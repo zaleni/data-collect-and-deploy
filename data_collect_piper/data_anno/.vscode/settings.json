@@ -1,0 +1,6 @@
+{
+    "files.watcherExclude": {
+        "**/data_sample_interface/**": true,
+        "**/data/**": true
+    }
+}

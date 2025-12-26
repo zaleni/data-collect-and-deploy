@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "arx_x5_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "KeyBoard::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-KeyBoard-85180d9c6a1c46a0d939.json",
+					"name" : "KeyBoard",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "X5Controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-X5Controller-4f25e112371af324f5b1.json",
+					"name" : "X5Controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arx_x5_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arx_x5_controller_uninstall-b331ac9c12e8b5be3d94.json",
+					"name" : "arx_x5_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-8438a068acce94c9c81b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/go2/ARX_X5/ROS2/X5_ws/build/arx_x5_controller",
+		"source" : "/home/go2/ARX_X5/ROS2/X5_ws/src/arx_x5_ros2/arx_x5_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

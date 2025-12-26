@@ -1,0 +1,33 @@
+################# 同时启动两个相机、接收相机的图像数据并存储 实现流程 ###################
+1. 将两个相机用usb连接到主机
+2. 新建终端1，cd到orbbec_ws目录下，并source ./devel/setup.bash
+3. 在终端1中，检查两个摄像头的接口信息，命令为：rosrun orbbec_camera list_ob_devices.sh
+   输出结果一般如下：（需要检查一下哪个是front哪个是right）
+    Found Orbbec device ORBBEC Depth Sensor, usb port 1-7.1, serial number 
+    Found Orbbec device Orbbec DaBai DCW RGB Camera, usb port 1-7.3, serial number CH2S84200SN
+    Found Orbbec device ORBBEC Depth Sensor, usb port 1-8.1, serial number 
+    Found Orbbec device Orbbec DaBai DCW RGB Camera, usb port 1-8.3, serial number CH2S84201Y7
+4. 根据接口信息，修改/home/robot/OrbbecSDK_develop/orbbec_ws/src/OrbbecSDK_ROS1/launch/multi_camera.launch文件中的usb号
+    （输出有4个相机信息和usb号，只需要按照两个depth传感器的usb号改即可）
+    <arg name="camera1_usb_port" default="1-7.1"/>
+    <arg name="camera2_usb_port" default="1-8.1"/>
+5. 要修改 multi_camera.launch 中的
+    <arg name="3d_sensor" default="dabai_dcw"/>
+    改成对应型号的
+5. 在终端1中，启动两个相机，命令为：roslaunch orbbec_camera multi_camera.launch
+6. 新建终端2，cd到orbbec_ws目录下，在终端中查看相机的topic，命令为：rostopic list
+7. 写subscriber程序，订阅相机相关topic并处理接收到的数据（可以参考/home/robot/OrbbecSDK_develop/orbbec_subscriber.py文件）
+8. 在piper_clt环境中运行示例程序：python orbbec_subscriber.py，该程序会存储照片到/home/robot/OrbbecSDK_develop/save_images路径下
+
+################## 其他配置 ##################
+1. 调整相机拍照帧率：
+    方法一：可以修改/home/robot/OrbbecSDK_develop/orbbec_ws/src/OrbbecSDK_ROS1/launch/dabai_dcw.launch文件中的以下参数
+    <arg name="color_fps" default="30"/> #颜色相机的帧率
+    <arg name="depth_fps" default="30"/> #深度相机的帧率
+    方法二：在/home/robot/OrbbecSDK_develop/orbbec_ws/src/OrbbecSDK_ROS1/launch/multi_camera.launch中修改以上两个参数
+
+
+################## 参考资料 ##################
+相机的sdk_ros包来源：https://github.com/orbbec/OrbbecSDK_ROS1
+同时启动两个相机的教程来源：https://github.com/orbbec/OrbbecSDK_ROS1/blob/main/docs/multi_camera_CN.MD
+################## 参考资料 ##################

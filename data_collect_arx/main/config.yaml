@@ -1,0 +1,13 @@
+camera_config:
+  img_left_topic: '/camera_01/color/image_raw'
+  img_left_depth_topic: '/camera_01/depth/image_raw'
+  img_head_topic: '/camera_02/color/image_raw'
+  img_head_depth_topic: '/camera_02/depth/image_raw'
+
+
+arm_config:
+  # controller_left_topic: '/ARX_VR_L'
+  arm_feedback_left_topic: '/arm_master_l_status'
+  follow_arm_left_cmd_topic: '/joint_control'
+  follow_arm_left_feedback_topic: '/arm_slave_l_status'
+

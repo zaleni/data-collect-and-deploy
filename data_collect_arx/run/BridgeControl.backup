@@ -1,0 +1,94 @@
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Header
+
+# 假设 PosCmd 来自 piper_msgs
+# 如果您的 PosCmd 消息在不同的包中，请修改这里的导入
+from geometry_msgs.msg import Pose
+from arx5_arm_msg.msg import RobotCmd
+from scipy.spatial.transform import Rotation as R
+class PosBridgeNode(Node):
+    """
+    该节点订阅一个机械臂的'pos_cmd'话题，
+    然后将指令转换为'RobotCmd'消息格式，
+    并发布给另一个机械臂。
+    """
+    def __init__(self):
+        super().__init__('pos_cmd_to_robot_cmd_bridge')
+
+        # 创建订阅者，接收来自第一个机械臂的指令
+        # 话题名称和消息类型需要根据您的实际情况进行调整
+        self.subscription = self.create_subscription(
+            Pose,
+            'end_pose',  # 订阅的话题名称
+            self.pos_cmd_callback,
+            10)
+        self.get_logger().info('订阅 "pos_cmd" 话题...')
+
+        # 创建发布者，向第二个机械臂发送指令
+        self.publisher = self.create_publisher(
+            RobotCmd,
+            'arm_cmd',  # 发布的话题名称
+            10)
+        self.get_logger().info('创建 "arm_cmd" 话题的发布者...')
+
+    def pos_cmd_callback(self, msg: Pose):
+        """
+        接收到 Pose 消息后的回调函数。
+        """
+        self.get_logger().info(f'接收到 Pose: position=({msg.position.x:.3f}, {msg.position.y:.3f}, {msg.position.z:.3f}), orientation=({msg.orientation.x:.3f}, {msg.orientation.y:.3f}, {msg.orientation.z:.3f}, {msg.orientation.w:.3f})')
+        
+        # 1. 创建一个新的 RobotCmd 消息
+        robot_cmd_msg = RobotCmd()
+        robot_cmd_msg.header = Header()
+        robot_cmd_msg.header.stamp = self.get_clock().now().to_msg()
+
+        # 2. 将 Pose 的数据映射到 RobotCmd
+        
+        # 从四元数转换到欧拉角
+        quat = [msg.orientation.x, msg.orientation.y, msg.orientation.z, msg.orientation.w]
+        rotation = R.from_quat(quat)
+        # 使用 'xyz' 顺序获取 roll, pitch, yaw
+        roll, pitch, yaw = rotation.as_euler('xyz', degrees=False)
+
+        # 将末端位姿从 Pose 复制到 RobotCmd
+        robot_cmd_msg.end_pos = [
+            msg.position.x,
+            msg.position.y,
+            msg.position.z,
+            roll,
+            pitch,
+            yaw
+        ]
+
+
+        # PosCmd 中没有关节位置信息，设置为默认值
+        robot_cmd_msg.joint_pos = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+        # 复制夹爪指令
+        # robot_cmd_msg.gripper = msg.gripper
+        robot_cmd_msg.gripper = 0.0
+
+        # 设置控制模式。模式 '4' 通常对应末端位姿控制。
+        # 您可能需要根据接收端节点的需要调整此值。
+        robot_cmd_msg.mode = 4
+
+        # 3. 发布转换后的消息
+        self.publisher.publish(robot_cmd_msg)
+        self.get_logger().info(f'已发布 RobotCmd: end_pos={robot_cmd_msg.end_pos}')
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    try:
+        bridge_node = PosBridgeNode()
+        rclpy.spin(bridge_node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        if 'bridge_node' in locals() and rclpy.ok():
+            bridge_node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

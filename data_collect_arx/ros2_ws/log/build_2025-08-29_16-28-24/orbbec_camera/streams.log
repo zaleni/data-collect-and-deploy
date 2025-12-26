@@ -1,0 +1,250 @@
+[0.023s] Invoking command in '/home/go2/ARX_X5/ros2_ws/build/orbbec_camera': AMENT_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:/home/go2/piper_ros/install/piper_msgs:/home/go2/piper_ros/install/piper_description:/home/go2/ARX_X5/ROS2/X5_ws/install/arx_x5_controller:/home/go2/ARX_X5/ROS2/X5_ws/install/arx5_arm_msg:/home/go2/piper_ros/install/piper:/opt/ros/foxy:/home/go2/ARX_X5/ROS2/X5_ws/install/arm_control CONDA_PROMPT_MODIFIER=(ARX) LD_LIBRARY_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/go2/ARX_X5/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera
+[0.093s] -- The C compiler identification is GNU 9.4.0
+[0.153s] -- The CXX compiler identification is GNU 9.4.0
+[0.157s] -- Check for working C compiler: /usr/bin/cc
+[0.252s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.253s] -- Detecting C compiler ABI info
+[0.347s] -- Detecting C compiler ABI info - done
+[0.355s] -- Detecting C compile features
+[0.356s] -- Detecting C compile features - done
+[0.357s] -- Check for working CXX compiler: /usr/bin/c++
+[0.455s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.457s] -- Detecting CXX compiler ABI info
+[0.558s] -- Detecting CXX compiler ABI info - done
+[0.567s] -- Detecting CXX compile features
+[0.567s] -- Detecting CXX compile features - done
+[0.569s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.589s] -- Found PythonInterp: /home/go2/miniconda3/envs/ARX/bin/python3 (found suitable version "3.8", minimum required is "3") 
+[0.590s] -- Using PYTHON_EXECUTABLE: /home/go2/miniconda3/envs/ARX/bin/python3
+[0.707s] -- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+[0.711s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.733s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.737s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.848s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.876s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.943s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.962s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[1.084s] -- Found camera_info_manager: 2.4.0 (/opt/ros/foxy/share/camera_info_manager/cmake)
+[1.121s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.122s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.123s] -- Looking for pthread.h
+[1.222s] -- Looking for pthread.h - found
+[1.223s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.315s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.316s] -- Looking for pthread_create in pthreads
+[1.405s] -- Looking for pthread_create in pthreads - not found
+[1.405s] -- Looking for pthread_create in pthread
+[1.496s] -- Looking for pthread_create in pthread - found
+[1.497s] -- Found Threads: TRUE  
+[1.614s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[1.662s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[1.696s] -- Found image_publisher: 2.3.0 (/opt/ros/foxy/share/image_publisher/cmake)
+[1.790s] -- Found OpenCV: /usr (found version "4.2.0") 
+[1.790s] -- Found orbbec_camera_msgs: 1.2.2 (/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/cmake)
+[1.871s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[1.881s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[1.889s] -- Found tf2_eigen: 0.13.14 (/opt/ros/foxy/share/tf2_eigen/cmake)
+[2.094s] -- Found tf2_sensor_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_sensor_msgs/cmake)
+[2.107s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[2.152s] -- Found backward_ros: 1.0.1 (/opt/ros/foxy/share/backward_ros/cmake)
+[2.155s] -- Found libdw: /usr/lib/x86_64-linux-gnu/libdw.so  
+[2.157s] -- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+[2.157s] -- BACKWARD_HAS_UNWIND=1
+[2.157s] -- BACKWARD_HAS_BACKTRACE=0
+[2.157s] -- BACKWARD_HAS_BACKTRACE_SYMBOL=0
+[2.158s] -- BACKWARD_HAS_DW=1
+[2.158s] -- BACKWARD_HAS_BFD=0
+[2.158s] -- Found Backward: /opt/ros/foxy/share/backward_ros/cmake  
+[2.164s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[2.174s] -- ORRBEC Machine : x86_64
+[2.174s] 
+[2.174s] -- ORRBEC Machine Bits : 64
+[2.175s] 
+[3.968s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.052s] -- Configuring done
+[4.240s] -- Generating done
+[4.339s] -- Build files have been written to: /home/go2/ARX_X5/ros2_ws/build/orbbec_camera
+[4.347s] Invoked command in '/home/go2/ARX_X5/ros2_ws/build/orbbec_camera' returned '0': AMENT_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:/home/go2/piper_ros/install/piper_msgs:/home/go2/piper_ros/install/piper_description:/home/go2/ARX_X5/ROS2/X5_ws/install/arx_x5_controller:/home/go2/ARX_X5/ROS2/X5_ws/install/arx5_arm_msg:/home/go2/piper_ros/install/piper:/opt/ros/foxy:/home/go2/ARX_X5/ROS2/X5_ws/install/arm_control CONDA_PROMPT_MODIFIER=(ARX) LD_LIBRARY_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/go2/ARX_X5/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera
+[4.348s] Invoking command in '/home/go2/ARX_X5/ros2_ws/build/orbbec_camera': AMENT_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:/home/go2/piper_ros/install/piper_msgs:/home/go2/piper_ros/install/piper_description:/home/go2/ARX_X5/ROS2/X5_ws/install/arx_x5_controller:/home/go2/ARX_X5/ROS2/X5_ws/install/arx5_arm_msg:/home/go2/piper_ros/install/piper:/opt/ros/foxy:/home/go2/ARX_X5/ROS2/X5_ws/install/arm_control CONDA_PROMPT_MODIFIER=(ARX) LD_LIBRARY_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/go2/ARX_X5/ros2_ws/build/orbbec_camera -- -j56 -l56
+[4.401s] [35m[1mScanning dependencies of target orbbec_camera[0m
+[4.401s] [35m[1mScanning dependencies of target frame_latency[0m
+[4.403s] [35m[1mScanning dependencies of target frame_latency_node[0m
+[4.404s] [35m[1mScanning dependencies of target orbbec_camera_node[0m
+[4.483s] [  4%] [32mBuilding CXX object CMakeFiles/orbbec_camera_node.dir/rclcpp_components/node_main_orbbec_camera_node.cpp.o[0m
+[4.484s] [  8%] [32mBuilding CXX object CMakeFiles/frame_latency_node.dir/rclcpp_components/node_main_frame_latency_node.cpp.o[0m
+[4.487s] [ 12%] [32mBuilding CXX object CMakeFiles/frame_latency.dir/tools/frame_latency.cpp.o[0m
+[4.611s] [ 16%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/image_publisher.cpp.o[0m
+[4.611s] [ 24%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/dynamic_params.cpp.o[0m
+[4.611s] [ 24%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/d2c_viewer.cpp.o[0m
+[4.613s] [ 28%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ob_camera_node.cpp.o[0m
+[4.614s] [ 32%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ros_param_backend.cpp.o[0m
+[4.614s] [ 36%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ob_camera_node_driver.cpp.o[0m
+[4.615s] [ 40%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/synced_imu_publisher.cpp.o[0m
+[4.617s] [ 44%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/utils.cpp.o[0m
+[4.617s] [ 48%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ros_service.cpp.o[0m
+[4.618s] [ 52%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/jpeg_decoder.cpp.o[0m
+[6.425s] [ 56%] [32m[1mLinking CXX executable frame_latency_node[0m
+[6.437s] [ 60%] [32m[1mLinking CXX executable orbbec_camera_node[0m
+[6.539s] [ 60%] Built target frame_latency_node
+[6.547s] [ 60%] Built target orbbec_camera_node
+[21.312s] [ 64%] [32m[1mLinking CXX shared library libframe_latency.so[0m
+[21.610s] [ 64%] Built target frame_latency
+[27.366s] [ 68%] [32m[1mLinking CXX shared library liborbbec_camera.so[0m
+[27.747s] [ 68%] Built target orbbec_camera
+[27.764s] [35m[1mScanning dependencies of target list_devices_node[0m
+[27.764s] [35m[1mScanning dependencies of target topic_statistics_node[0m
+[27.764s] [35m[1mScanning dependencies of target list_depth_work_mode_node[0m
+[27.764s] [35m[1mScanning dependencies of target list_camera_profile_mode_node[0m
+[27.802s] [ 72%] [32mBuilding CXX object CMakeFiles/topic_statistics_node.dir/tools/topic_statistics.cpp.o[0m
+[27.846s] [ 76%] [32mBuilding CXX object CMakeFiles/list_depth_work_mode_node.dir/tools/list_depth_work_mode.cpp.o[0m
+[27.847s] [ 80%] [32mBuilding CXX object CMakeFiles/list_camera_profile_mode_node.dir/tools/list_camera_profile.cpp.o[0m
+[27.850s] [ 84%] [32mBuilding CXX object CMakeFiles/list_devices_node.dir/tools/list_devices_node.cpp.o[0m
+[32.732s] [ 88%] [32m[1mLinking CXX executable list_depth_work_mode_node[0m
+[32.928s] [ 88%] Built target list_depth_work_mode_node
+[32.934s] [ 92%] [32m[1mLinking CXX executable list_devices_node[0m
+[33.041s] [ 96%] [32m[1mLinking CXX executable list_camera_profile_mode_node[0m
+[33.456s] [ 96%] Built target list_devices_node
+[33.469s] [ 96%] Built target list_camera_profile_mode_node
+[34.218s] [100%] [32m[1mLinking CXX executable topic_statistics_node[0m
+[34.436s] [100%] Built target topic_statistics_node
+[34.452s] Invoked command in '/home/go2/ARX_X5/ros2_ws/build/orbbec_camera' returned '0': AMENT_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:/home/go2/piper_ros/install/piper_msgs:/home/go2/piper_ros/install/piper_description:/home/go2/ARX_X5/ROS2/X5_ws/install/arx_x5_controller:/home/go2/ARX_X5/ROS2/X5_ws/install/arx5_arm_msg:/home/go2/piper_ros/install/piper:/opt/ros/foxy:/home/go2/ARX_X5/ROS2/X5_ws/install/arm_control CONDA_PROMPT_MODIFIER=(ARX) LD_LIBRARY_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/go2/ARX_X5/ros2_ws/build/orbbec_camera -- -j56 -l56
+[34.455s] Invoking command in '/home/go2/ARX_X5/ros2_ws/build/orbbec_camera': AMENT_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:/home/go2/piper_ros/install/piper_msgs:/home/go2/piper_ros/install/piper_description:/home/go2/ARX_X5/ROS2/X5_ws/install/arx_x5_controller:/home/go2/ARX_X5/ROS2/X5_ws/install/arx5_arm_msg:/home/go2/piper_ros/install/piper:/opt/ros/foxy:/home/go2/ARX_X5/ROS2/X5_ws/install/arm_control CONDA_PROMPT_MODIFIER=(ARX) LD_LIBRARY_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/go2/ARX_X5/ros2_ws/build/orbbec_camera
+[34.464s] -- Install configuration: "Release"
+[34.464s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/orbbec_camera_node
+[34.464s] -- Set runtime path of "/home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/orbbec_camera_node" to ":/home/go2/ARX_X5/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/x64"
+[34.464s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/frame_latency_node
+[34.464s] -- Set runtime path of "/home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/frame_latency_node" to ":/home/go2/ARX_X5/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/x64"
+[34.464s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/liborbbec_camera.so
+[34.467s] -- Set runtime path of "/home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/liborbbec_camera.so" to ":/home/go2/ARX_X5/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/x64"
+[34.467s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/libframe_latency.so
+[34.468s] -- Set runtime path of "/home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/libframe_latency.so" to ":/home/go2/ARX_X5/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/x64"
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/synced_imu_publisher.h
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/constants.h
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/ros_param_backend.h
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/jpeg_decoder.h
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/dynamic_params.h
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/rk_mpp_decoder.h
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/ob_camera_node.h
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/utils.h
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/ob_camera_node_driver.h
+[34.469s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/d2c_viewer.h
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/image_publisher.h
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/orbbec_camera/jetson_nv_decoder.h
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/magic_enum
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/magic_enum/magic_enum.hpp
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_dw2.launch.py
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/multi_camera_synced.launch.py
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_dcw2.launch.py
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/femto_mega.launch.py
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini2XL.launch.py
+[34.470s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/deeya.launch.py
+[34.471s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_dcw.launch.py
+[34.471s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/astra_embedded_s.launch.py
+[34.471s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini_intra_process_demo_launch.py
+[34.471s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_dcl.py
+[34.472s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini2VL.launch.py
+[34.472s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini_330_series.launch.py
+[34.472s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini2.launch.py
+[34.472s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_pro.launch.py
+[34.472s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini_ew.launch.py
+[34.472s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/ob_camera.launch.py
+[34.473s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/astra.launch.py
+[34.473s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini2L.launch.py
+[34.473s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/femto_net_camera.launch.py
+[34.473s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_d1.launch.py
+[34.473s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini_e_lite.launch.py
+[34.473s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/multi_net_camera.launch.py
+[34.473s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/femto.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/multi_camera.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/femto_bolt.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini_ew_lite.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/astra_pro2.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_dw.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/astra_stereo_u3.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini_e.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/astra_adv.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_max_pro.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/astra2.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/dabai_max.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//launch/gemini_uw.launch.py
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//config
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//config/depthfilter
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//config/depthfilter/Openni_device.json
+[34.474s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//config/depthfilter/Gemini2_v1.8.json
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//config/OrbbecSDKConfig_v1.0.xml
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//config/camera_params.yaml
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera//config/.gitkeep
+[34.475s] -- Up-to-date: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/Sensor.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/StreamProfile.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/Version.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/Property.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/Error.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/Filter.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/Frame.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/MultipleDevices.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/ObTypes.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/Context.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/Pipeline.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/RecordPlayback.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/Utils.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/h/Device.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/ObSensor.hpp
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/ObSensor.h
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp
+[34.475s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/Device.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/Version.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/Pipeline.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/Sensor.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/Frame.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/Error.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/Utils.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/Types.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/RecordPlayback.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/StreamProfile.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/Context.hpp
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/include/libobsensor/hpp/Filter.hpp
+[34.476s] -- Up-to-date: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib//liblive555.so
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib//libdepthengine.so
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib//libob_usb.so
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib//libdepthengine.so.2.0
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib//libOrbbecSDK.so.1.10
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib//libOrbbecSDK.so
+[34.476s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib//libOrbbecSDK.so.1.10.22
+[34.483s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/list_devices_node
+[34.483s] -- Set runtime path of "/home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/list_devices_node" to ":/home/go2/ARX_X5/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/x64"
+[34.483s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/list_depth_work_mode_node
+[34.483s] -- Set runtime path of "/home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/list_depth_work_mode_node" to ":/home/go2/ARX_X5/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/x64"
+[34.483s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/list_camera_profile_mode_node
+[34.483s] -- Set runtime path of "/home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/list_camera_profile_mode_node" to ":/home/go2/ARX_X5/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/x64"
+[34.483s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/topic_statistics_node
+[34.484s] -- Set runtime path of "/home/go2/ARX_X5/ros2_ws/install/orbbec_camera/lib/orbbec_camera/topic_statistics_node" to ":/home/go2/ARX_X5/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera/SDK/lib/x64"
+[34.484s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/environment/library_path.sh
+[34.484s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/environment/library_path.dsv
+[34.484s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/ament_index/resource_index/package_run_dependencies/orbbec_camera
+[34.484s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/ament_index/resource_index/parent_prefix_path/orbbec_camera
+[34.484s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/environment/ament_prefix_path.sh
+[34.484s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/environment/ament_prefix_path.dsv
+[34.484s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/environment/path.sh
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/environment/path.dsv
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/local_setup.bash
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/local_setup.sh
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/local_setup.zsh
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/local_setup.dsv
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/package.dsv
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/ament_index/resource_index/packages/orbbec_camera
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/ament_index/resource_index/rclcpp_components/orbbec_camera
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/cmake/orbbec_cameraConfig.cmake
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/cmake/orbbec_cameraConfig-version.cmake
+[34.485s] -- Installing: /home/go2/ARX_X5/ros2_ws/install/orbbec_camera/share/orbbec_camera/package.xml
+[34.488s] Invoked command in '/home/go2/ARX_X5/ros2_ws/build/orbbec_camera' returned '0': AMENT_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs:/home/go2/piper_ros/install/piper_msgs:/home/go2/piper_ros/install/piper_description:/home/go2/ARX_X5/ROS2/X5_ws/install/arx_x5_controller:/home/go2/ARX_X5/ROS2/X5_ws/install/arx5_arm_msg:/home/go2/piper_ros/install/piper:/opt/ros/foxy:/home/go2/ARX_X5/ROS2/X5_ws/install/arm_control CONDA_PROMPT_MODIFIER=(ARX) LD_LIBRARY_PATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/go2/ARX_X5/ros2_ws/install/orbbec_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/go2/ARX_X5/ros2_ws/build/orbbec_camera

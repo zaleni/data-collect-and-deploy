@@ -1,0 +1,213 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				},
+				{
+					"build" : "arm_control__py",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/go2/ARX_X5/ARX_VR_SDK/ROS2/build/arm_control/arm_control__py",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "arm_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control-bc06d8deb565756daf1e.json",
+					"name" : "arm_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__cpp-ab3f440eede67a7f33c5.json",
+					"name" : "arm_control__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "arm_control__py::@6cada1500b174b273e0d",
+					"jsonFile" : "target-arm_control__py-77c6012aa17c03964a6e.json",
+					"name" : "arm_control__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__python::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__python-a92a1b706924eee539c5.json",
+					"name" : "arm_control__python",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_generator_c-ed1052584152fb7e6636.json",
+					"name" : "arm_control__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_c-c8678bbf612bf00ec2d0.json",
+					"name" : "arm_control__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_c__pyext-6addffa6a61bbd4479b5.json",
+					"name" : "arm_control__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_cpp-051cc0a4574c0f7ad914.json",
+					"name" : "arm_control__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_fastrtps_c-e050b12795c63471664f.json",
+					"name" : "arm_control__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_fastrtps_c__pyext-6476b7440e293412d665.json",
+					"name" : "arm_control__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_fastrtps_cpp-ac8ffbbcc9082586d834.json",
+					"name" : "arm_control__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_introspection_c-62c9622aa58f6c2c5acd.json",
+					"name" : "arm_control__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_introspection_c__pyext-7a84656b940a4f86df71.json",
+					"name" : "arm_control__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_introspection_cpp-d521ce13e2937944c163.json",
+					"name" : "arm_control__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control_uninstall-a9d8de34c6503c724de2.json",
+					"name" : "arm_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f7bf48e66b4be9d0967d.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/go2/ARX_X5/ARX_VR_SDK/ROS2/build/arm_control",
+		"source" : "/home/go2/ARX_X5/ARX_VR_SDK/ROS2/src/arm_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
