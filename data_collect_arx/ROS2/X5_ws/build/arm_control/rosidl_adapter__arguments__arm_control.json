@@ -1,6 +1,0 @@
-{
-  "package_name": "arm_control",
-  "non_idl_tuples": [
-    "/home/go2/ARX_X5/ROS2/X5_ws/src/arxmsgros2/arm_control:msg/PosCmd.msg"
-  ]
-}

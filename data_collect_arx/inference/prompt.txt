@@ -1,7 +1,0 @@
-export CUDA_VISIBLE_DEVICES=0
-source /home/go2/ARX_X5/ROS2/X5_ws/install/setup.bash
-ros2 topic pub /robot_command std_msgs/String "data: 'initialize'" --once
-ros2 topic pub /robot_command std_msgs/String "data: 'pick_mcdonald'" --once
-ros2 topic pub /robot_command std_msgs/String "data: 'pick_tissue'" --once
-ros2 topic pub /robot_command std_msgs/String "data: 'pick_bottle'" --once
-ros2 topic pub /robot_command std_msgs/String "data: 'pick_gum'" --once
